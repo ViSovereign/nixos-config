@@ -1,11 +1,11 @@
 {
-  modules.nixos.cli.git = { ... }: {
+  modules.nixos.cli.git = _: {
     programs.git = {
       enable = true;
       config = {
         user = {
           name = "ViSovereign";
-          email = "Sovvymobile@gmail.com";
+          email = "sovvymobile@gmail.com";
         };
         "protocol.https".allow = "always";
         "push".autoSetupRemote = true;
