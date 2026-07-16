@@ -2,18 +2,18 @@
 
 <img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/150279bb788cf84fc94a8b79cfcd47857cac50e2/svg/nixos.svg" align="center" width="144px" height="144px"/>
 
-# Sov's Framework 13 Nix Configuration
+# Sov's Nix Configuration
 
-_My NixOS setup for Framework 13 (AMD Ryzen 7040) and eventually other equipment as I go
+_My NixOS setup for Framework 13 (AMD Ryzen 7040) and eventually other equipment as I go_
 
 </div>
 
-# 💻 Framework 13
+## 💻 Framework 13
 
 This repository contains a NixOS configuration tailored for the Framework 13 (AMD Ryzen 7040).
 
 ## 📁 Files
-_ files (that are not _settings.nix) are not imported until I work them into the project.
+_ files (that are not \[_settings|_themes\].nix) are not imported until I work them into the project.
 ```
 .
 ├── default.nix
@@ -135,6 +135,8 @@ _ files (that are not _settings.nix) are not imported until I work them into the
  - ly as your login screen
 
  # Keybinds
+
+
  
  # To Dos
 
@@ -145,6 +147,7 @@ _ files (that are not _settings.nix) are not imported until I work them into the
   - Secrets
   - git needs to remember my name lol
   - Intigrate some noctalia theming into some apps
+  - F key keybinds
 
 # Shout Outs
 
