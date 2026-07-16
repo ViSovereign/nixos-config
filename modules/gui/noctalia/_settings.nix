@@ -21,11 +21,12 @@ config: with config.theme; {
       open_near_click_control_center = true;
       control_center_placement = "floating";
       session_placement = "floating";
-      session_position = "center"; window-rule = {
-         open-fullscreen = false;
-         geometry-corner-radius = 10;
-         clip-to-geometry = true;
-       };
+      session_position = "center";
+      window-rule = {
+        open-fullscreen = false;
+        geometry-corner-radius = 10;
+        clip-to-geometry = true;
+      };
       transparency_mode = "soft";
     };
 
@@ -121,9 +122,9 @@ config: with config.theme; {
         thickness = 30;
         widget_spacing = 10;
         start = [
-        "launcher"
-        "wallhaven"
-        "clipboard"
+          "launcher"
+          "wallhaven"
+          "clipboard"
         ];
         center = [ "taskbar" ];
         end = [
@@ -131,27 +132,6 @@ config: with config.theme; {
           "clock"
         ];
       };
-    };
-
-    plugins = {
-      enabled = [
-        "noctalia/wallhaven"
-      ];
-
-      source = [
-        {
-          auto_update = true;
-          kind = "git";
-          location = "https://github.com/noctalia-dev/official-plugins";
-          name = "official";
-        }
-        {
-          auto_update = true;
-          kind = "git";
-          location = "https://github.com/noctalia-dev/community-plugins";
-          name = "community";
-        }
-      ];
     };
 
   widget = {
