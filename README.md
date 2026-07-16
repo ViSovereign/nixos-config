@@ -123,7 +123,7 @@ _ files (that are not \[_settings|_themes\].nix) are not imported until I work t
 21 directories, 83 files
 ```
 
-# Features
+## ⚙️ Features
 
  - niri
  - noctalia v5
@@ -134,11 +134,35 @@ _ files (that are not \[_settings|_themes\].nix) are not imported until I work t
     - bitwarden
  - ly as your login screen
 
- # Keybinds
+ ## 🔑 Keybinds
 
+### Niri (Useful Ones)
 
+| KeyBind | Action |
+|---|---|
+| Mod+Q | close window |
+| Mod+F | fullscreen |
+| Mod+O | toggle overview |
+| Mod+R | switch preset column width |
+
+### Noctalia (Useful Ones)
+
+| KeyBind | Action |
+|---|---|
+| Mod+Space | open app launcher |
+| Mod+S | take a screenshot |
+| Mod+V | show clipboard |
+| Mod+Esc | show session |
+
+### Open Apps
+
+| KeyBind | Action |
+|---|---|
+| Mod+E | open nautilus |
+| Mod+Shift+E | open zeditor |
+| Mod+Shift+D | open discord |
  
- # To Dos
+ # 🏃To Dos
 
   - More firefox settings like:
     - Disabling AI
@@ -149,7 +173,7 @@ _ files (that are not \[_settings|_themes\].nix) are not imported until I work t
   - Intigrate some noctalia theming into some apps
   - F key keybinds
 
-# Shout Outs
+# 📯 Shout Outs
 
  - Thank you [linusammon](https://github.com/linusammon/nixos-config) for showing me your nix repo this is based off and letting me pelt you with questions about it!
  - Thank you [1Solon](https://github.com/1Solon/framework-13-nixos) for the wonderful framework 13 base configs for me to read and use.
