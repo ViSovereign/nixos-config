@@ -17,10 +17,12 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
  - niri
  - noctalia v5
  - nautilus
- - firefox with extensions:
-    - dark reader
-    - kagi search
-    - bitwarden
+ - zen browser with extensions:
+    - Darkreader
+    - Kagi search
+      - You'll need to log in
+    - Bitwarden
+    - uBlock Origin
  - ly as your login screen
   - with auto login for your user
 
@@ -45,10 +47,6 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 | Mod+V | show clipboard |
 | Mod+Esc | show session |
 
-### Function Keys
-
-Most are handled by noctalia such as volume up/down, media controls, brightness.
-
 ### Open Apps
 
 | KeyBind | Action |
@@ -57,6 +55,12 @@ Most are handled by noctalia such as volume up/down, media controls, brightness.
 | Mod+Shift+E | open zeditor |
 | Mod+Shift+D | open discord |
 | Mod+B | open zen browser |
+
+### Function Keys
+
+[Framework function keys](https://wiki.archlinux.org/title/Framework_Laptop_13#Function_keys)
+
+Most are handled by noctalia such as volume up/down, media controls, brightness.
  
  # 🏃To Dos
 
@@ -69,7 +73,7 @@ Most are handled by noctalia such as volume up/down, media controls, brightness.
 
 # 📯 Shout Outs
 
- - Thank you [linusammon](https://github.com/linusammon/nixos-config) for showing me your nix repo this is based off and letting me pelt you with questions about it!
+ - Thank you [linusammon](https://github.com/linusammon/nixos-config) for showing me your nix repo this is based on and letting me pelt you with questions!
  - Thank you [1Solon](https://github.com/1Solon/framework-13-nixos) for the wonderful framework 13 base configs for me to read and use.
 
  # Useful Commands
