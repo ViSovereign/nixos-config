@@ -92,6 +92,6 @@ in
     {
       environment.systemPackages = [ pkg ];
 
-      custom.keybinds."Mod+Shift+B".spawn = [ (lib.getExe pkg) ];
+      custom.keybinds."Mod+B".spawn = [ (lib.getExe pkg) ];
     };
 }

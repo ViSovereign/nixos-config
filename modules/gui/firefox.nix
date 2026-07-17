@@ -95,7 +95,7 @@
     };
 
     custom.keybinds = {
-      "Mod+B".spawn = [
+      "Mod+Shift+B".spawn = [
         "firefox"
       ];
     };
