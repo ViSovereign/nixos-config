@@ -88,27 +88,17 @@ config: with config.theme; {
     mode = "dark";
     source = "wallpaper";
     wallpaper_scheme = "soft";
+    pure_black_dark = true;
   };
 
-  bar =
-    let
-      common = {
+  bar = {
+      default = {
         reserve_space = true;
         hover_highlight = false;
         background_opacity = 0.80;
         scale = 1.0;
         thickness = 30;
         font_weight = "bold";
-        margin_edge = 3;
-        margin_ends = 0;
-        padding = 10;
-        widget_spacing = 10;
-        radius = 6;
-        capsule_radius = 6;
-      };
-    in
-    {
-      default = common // {
         layer = "top";
         position = "right";
         capsule_radius = 6;
@@ -119,19 +109,10 @@ config: with config.theme; {
         concave_edge_corners = true;
         radius_bottom_left = 0;
         radius_top_left = 0;
-        reserve_space = false;
-        thickness = 30;
         widget_spacing = 10;
-        start = [
-          "launcher"
-          "wallhaven"
-          "clipboard"
-        ];
-        center = [ "taskbar" ];
-        end = [
-          "battery"
-          "clock"
-        ];
+        start = [ "wallhaven" "todo" "notes" ];
+        center = [ "cpu" "taskbar" "caffeine" ];
+        end = [ "network" "bluetooth" "battery" "weather" "clock" ];
       };
     };
 
@@ -143,8 +124,12 @@ config: with config.theme; {
       format = "{:%I:%M}";
     };
 
+    weather = {
+      show_temperature = false;
+      unit = "imperial";
+    };
+
     tray.drawer = true;
-    weather.unit = "imperial";
     network.show_label = false;
     volume.show_label = false;
 
