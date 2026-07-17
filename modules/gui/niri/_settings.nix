@@ -31,7 +31,7 @@ config: with config.theme; {
     "Mod+F".fullscreen-window = _: { };
 
     "Mod+O".toggle-overview = _: { };
-    "Mod_L+P".toggle-overview = _: { };
+    #"Mod+L+P".toggle-overview = _: { };
 
     "Mod+R".switch-preset-column-width = _: { };
     "Mod+Shift+R".maximize-column = _: { };
@@ -64,11 +64,7 @@ config: with config.theme; {
     "Mod+Shift+WheelScrollUp".move-column-left = _: { };
     "Mod+Shift+WheelScrollDown".move-column-right = _: { };
 
-    "XF86RFKill".spawn = [
-      exe
-      "msg"
-      "screenshot-fullscreen"
-    ];
+    #"XF86RFKill".spawn = [""]; This just works out of the box I guess
   }
   // (
     9
