@@ -47,6 +47,69 @@
       };
 
       custom.keybinds = {
+
+        "XF86AudioRaiseVolume".spawn = [
+          exe
+          "msg"
+          "volume-up"
+        ];
+        "XF86AudioLowerVolume".spawn = [
+          exe
+          "msg"
+          "volume-down"
+        ];
+        "XF86AudioMute".spawn = [
+          exe
+          "msg"
+          "volume-mute"
+        ];
+
+        "Mod+XF86AudioRaiseVolume".spawn = [
+          exe
+          "msg"
+          "mic-volume-up"
+        ];
+        "Mod+XF86AudioLowerVolume".spawn = [
+          exe
+          "msg"
+          "mic-volume-down"
+        ];
+        "Mod+XF86AudioMute".spawn = [
+          exe
+          "msg"
+          "mic-volume-mute"
+        ];
+
+        "XF86MonBrightnessUp".spawn = [
+          exe
+          "msg"
+          "brightness-up"
+        ];
+        "XF86MonBrightnessDown".spawn = [
+          exe
+          "msg"
+          "brightness-down"
+        ];
+
+        "XF86AudioPlay".spawn = [
+          exe
+          "msg"
+          "media"
+          "toggle"
+        ];
+        "XF86AudioNext".spawn = [
+          exe
+          "msg"
+          "media"
+          "next"
+        ];
+        "XF86AudioPrev".spawn = [
+          exe
+          "msg"
+          "media"
+          "previous"
+        ];
+
         "Mod+Space".spawn = [
           exe
           "msg"
@@ -75,7 +138,12 @@
           "msg"
           "screenshot-region"
         ];
-        "Mod+Shift+S".spawn = [
+        "Print".spawn = [
+          exe
+          "msg"
+          "screenshot-fullscreen"
+        ];
+        "XF86AudioMedia".spawn = [
           exe
           "msg"
           "screenshot-fullscreen"

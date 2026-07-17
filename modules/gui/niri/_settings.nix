@@ -31,6 +31,7 @@ config: with config.theme; {
     "Mod+F".fullscreen-window = _: { };
 
     "Mod+O".toggle-overview = _: { };
+    "Mod_L+P".toggle-overview = _: { };
 
     "Mod+R".switch-preset-column-width = _: { };
     "Mod+Shift+R".maximize-column = _: { };
@@ -47,9 +48,9 @@ config: with config.theme; {
     "Mod+T".toggle-window-floating = _: { };
     "Mod+Shift+T".switch-focus-between-floating-and-tiling = _: { };
 
-    "Mod+Up".focus-window-up = _: { };
-    "Mod+Down".focus-window-down = _: { };
     "Mod+Left".focus-column-left = _: { };
+    "Mod+Down".focus-workspace-down = _: { };
+    "Mod+Up".focus-workspace-up = _: { };
     "Mod+Right".focus-column-right = _: { };
 
     "Mod+WheelScrollUp".focus-column-left = _: { };
@@ -63,18 +64,10 @@ config: with config.theme; {
     "Mod+Shift+WheelScrollUp".move-column-left = _: { };
     "Mod+Shift+WheelScrollDown".move-column-right = _: { };
 
-    "XF86AudioLowerVolume".spawn = [
-      "wpctl"
-      "set-volume"
-      "@DEFAULT_AUDIO_SINK@"
-      "0.05-"
-    ];
-
-    "XF86AudioRaiseVolume".spawn = [
-      "wpctl"
-      "set-volume"
-      "@DEFAULT_AUDIO_SINK@"
-      "0.05+"
+    "XF86RFKill".spawn = [
+      exe
+      "msg"
+      "screenshot-fullscreen"
     ];
   }
   // (
