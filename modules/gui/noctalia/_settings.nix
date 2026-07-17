@@ -1,7 +1,7 @@
 config: with config.theme; {
   shell = {
     button_borders = false;
-    corner_radius_scale = 0.0;
+    corner_radius_scale = 0.70000001043081284;
     font_family = fonts.sans;
 
     launch_apps_as_systemd_services = true;
@@ -34,8 +34,8 @@ config: with config.theme; {
   };
 
   control_center = {
-    sidebar = "none";
-    sidebar_section = "none";
+    sidebar = "compact";
+    sidebar_section = "compact";
 
     shortcuts = [
       { type = "wifi"; }
@@ -64,7 +64,7 @@ config: with config.theme; {
       screen-off = {
         action = "screen_off";
         enabled = true;
-        timeout = 360.0;
+        timeout = 300.0;
       };
 
       lock_and_suspend = {
@@ -93,7 +93,7 @@ config: with config.theme; {
   bar =
     let
       common = {
-        reserve_space = false;
+        reserve_space = true;
         hover_highlight = false;
         background_opacity = 0.80;
         scale = 1.0;
@@ -103,7 +103,7 @@ config: with config.theme; {
         margin_ends = 0;
         padding = 10;
         widget_spacing = 10;
-        radius = 0;
+        radius = 6;
         capsule_radius = 6;
       };
     in
@@ -116,8 +116,9 @@ config: with config.theme; {
         margin_ends = 0;
         padding = 10;
         radius = 0;
-        radius_bottom_left = -12;
-        radius_top_left = -12;
+        concave_edge_corners = true;
+        radius_bottom_left = 0;
+        radius_top_left = 0;
         reserve_space = false;
         thickness = 30;
         widget_spacing = 10;
@@ -143,7 +144,7 @@ config: with config.theme; {
     };
 
     tray.drawer = true;
-
+    weather.unit = "imperial";
     network.show_label = false;
     volume.show_label = false;
 
@@ -157,6 +158,10 @@ config: with config.theme; {
       empty_color = "tertiary";
       occupied_color = "tertiary";
     };
-    wallhaven.type = "noctalia/wallhaven:wallhaven";
+
+    wallpaper.default.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.jpg";
+    wallpaper.last.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.jpg";
+    wallpaper.monitors.eDP-1.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.jpg";
+
   };
 }
