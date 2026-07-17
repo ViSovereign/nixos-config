@@ -34,3 +34,6 @@ url = "github:noctalia-dev/noctalia/cachix"
 
 [inputs.tack]
 url = "github:manic-systems/tack"
+
+[inputs.zen]
+url = "github:youwen5/zen-browser-flake"
