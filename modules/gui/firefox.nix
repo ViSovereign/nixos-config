@@ -1,6 +1,5 @@
 {
   modules.nixos.gui.firefox = { pkgs, ... }: {
-    #environment.systemPackages = [ pkgs.firefox ];
 
     programs.firefox = {
       enable = true;
@@ -46,6 +45,8 @@
 
         profiles.default.search = {
           force           = true;
+          default         = "DuckDuckGo";
+          privateDefault  = "DuckDuckGo";
 
           engines = {
             "Nix Packages" = {
