@@ -32,9 +32,12 @@ config: with config.theme; {
 
     "Mod+O".toggle-overview = _: { };
     #"Mod+L+P".toggle-overview = _: { };
+    "Mod+Slash".show-hotkey-overlay = _: { };
 
     "Mod+R".switch-preset-column-width = _: { };
     "Mod+Shift+R".maximize-column = _: { };
+
+    "Mod+Shift+P".power-off-monitors = _: { };
 
     "Mod+Plus".set-column-width = "+10%";
     "Mod+Minus".set-column-width = "-10%";
