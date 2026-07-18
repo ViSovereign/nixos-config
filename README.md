@@ -14,17 +14,33 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 ## ⚙️ Features
 
- - niri
- - noctalia v5
- - nautilus
- - zen browser with extensions:
-    - Darkreader
-    - Kagi search
-      - You'll need to log in
-    - Bitwarden
-    - uBlock Origin
- - ly as your login screen
-  - with auto login for your user
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" align="center" width="25px" height="25px"/>
+niri
+
+<img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" align="center" width="25px" height="25px"/>
+noctalia v5 + noctalia greeter
+
+<img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" align="center" width="25px" height="25px"/>
+zeditor
+
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" align="center" width="25px" height="25px"/>
+zen browser with extenstions!
+
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/discord.svg" align="center" width="25px" height="25px"/>
+discord
+
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg" align="center" width="25px" height="25px"/>
+steam
+
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/podman.svg" align="center" width="25px" height="25px"/>
+podman
+
+### Browser Extensions
+
+- Darkreader
+- Kagi search
+- Bitwarden
+- uBlock Origin
 
  ## 🔑 Keybinds
 
@@ -32,17 +48,20 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 | KeyBind | Action |
 |---|---|
+| Mod+Slash | show hotkeys |
 | Mod+Q | close window |
 | Mod+F | fullscreen |
 | Mod+O | toggle overview |
 | Mod+R | switch preset column width |
 | Mod+Shift+R | window fill the screen |
+| Mod+Shift+P | power off monitors |
 
 ### Noctalia (Useful Ones)
 
 | KeyBind | Action |
 |---|---|
 | Mod+Space | open app launcher |
+| Mod+Comma | open settings |
 | Mod+S | take a screenshot |
 | Mod+V | show clipboard |
 | Mod+Esc | show session |
@@ -51,6 +70,7 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 | KeyBind | Action |
 |---|---|
+| Mod+X | open kitty |
 | Mod+E | open nautilus |
 | Mod+Shift+E | open zeditor |
 | Mod+Shift+D | open discord |
@@ -60,32 +80,53 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 [Framework function keys](https://wiki.archlinux.org/title/Framework_Laptop_13#Function_keys)
 
-Most are handled by noctalia such as volume up/down, media controls, brightness.
+Most are handled by noctalia such as volume up/down, media controls, brightness, screenshots.
+
+### Shell Aliases
+```
+  ls = "eza";
+  ll = "eza -l";
+  la = "eza -a";
+  lla = "eza -la";
+  lt = "eza --tree";
+ ```
  
  # 🏃To Dos
 
   - Secrets
   - git needs to remember my name lol
-  - more better noctalia settings
-    - Maybe I can script out a converter, manually entering is not fun.
-  - more zen settings I think matter
-  - function keys for keyboard birghtness
+  - function keys for keyboard brightness
+  - setup defualt open apps
+
+ # Useful Nix Related Commands
+
+  ## Switch after saving the config
+  
+```
+sudo nixos-rebuild switch --flake .#framework --show-trace
+```
+or
+```
+nh os switch
+```
+
+## Update the packages in tack
+
+```
+tack update <package>
+```
+or
+```
+tack update
+```
+
+## Setup the fingerprint reader
+
+```
+fprintd-enroll
+```
 
 # 📯 Shout Outs
 
  - Thank you [linusammon](https://github.com/linusammon/nixos-config) for showing me your nix repo this is based on and letting me pelt you with questions!
  - Thank you [1Solon](https://github.com/1Solon/framework-13-nixos) for the wonderful framework 13 base configs for me to read and use.
-
- # Useful Commands
-
-  ## Switch after editing the config
-  
- ```
- sudo nixos-rebuild switch --flake .#framework --show-trace
- ```
-
- ## Update the pacages in tack
-
- ```
- tack update
- ```
