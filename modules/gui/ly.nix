@@ -6,7 +6,7 @@
         inherit (args) user;
       };
       ly = {
-        enable = true;
+        enable = false;
         x11Support = false;
       };
     };

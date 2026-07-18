@@ -23,7 +23,7 @@
     );
 
   modules.nixos.gui.noctalia-greeter =
-    { pkgs, lib, ... }:
+    { args, pkgs, lib, ... }:
     let
       pkg = config.packages.noctalia-greeter pkgs;
       exe = lib.getExe' pkg "noctalia-greeter-apply-appearance";
@@ -33,7 +33,7 @@
         path = "${pkgs.bibata-cursors}/share/icons";
       };
       greeterToml = (pkgs.formats.toml { }).generate "greeter.toml" (
-        import ./_settings.nix { inherit vars cursor; }
+        import ./_settings.nix { inherit args cursor; }
       );
     in
     {
