@@ -13,27 +13,40 @@ _My NixOS setup for Framework 13 (AMD Ryzen 7040) and eventually other equipment
 This repository contains a NixOS configuration tailored for the Framework 13 (AMD Ryzen 7040).
 
 ## ⚙️ Features
-
+<div>
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" align="left" width="25px" height="25px"/>
 niri
+</div>
 
+<div>
 <img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" align="left" width="25px" height="25px"/>
 noctalia v5 + noctalia greeter
 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" align="left" width="25px" height="25px"/>
 zeditor
+</div>
 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" align="left" width="25px" height="25px"/>
 zen browser with extenstions!
+</div>
 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/discord.svg" align="left" width="25px" height="25px"/>
 discord
+</div>
 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg" align="left" width="25px" height="25px"/>
 steam
+</div>
 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/podman.svg" align="left" width="25px" height="25px"/>
 podman
+</div>
+
 
 ### Browser Extensions
 
