@@ -9,7 +9,7 @@
     };
 
     programs.fish = {
-      interactiveShellInit = ''
+      interactiveShellInit = lib.mkAfter ''
         microfetch
       '';
     };
