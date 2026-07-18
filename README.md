@@ -13,14 +13,16 @@ _My NixOS setup for Framework 13 (AMD Ryzen 7040) and eventually other equipment
 This repository contains a NixOS configuration tailored for the Framework 13 (AMD Ryzen 7040).
 
 ## ⚙️ Features
-<div>
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" align="left" width="25px" height="25px"/>
-niri
-</div>
 
-<div>
-<img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" align="left" width="25px" height="25px"/>
-noctalia v5 + noctalia greeter
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" alt="icon" width="20px"; vertical-align: left;">
+    niri
+</p>
+
+<p>
+  <img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" alt="icon" width="20px"; vertical-align: left;">
+    noctalia v5 + noctalia greeter
+</p>
 
 <div>
 <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" align="left" width="25px" height="25px"/>
