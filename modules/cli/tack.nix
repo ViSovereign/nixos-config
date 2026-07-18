@@ -1,7 +1,6 @@
 { inputs, ... }: {
   modules.nixos.cli.tack =
     {
-      config,
       pkgs,
       ...
     }:
