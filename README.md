@@ -15,40 +15,39 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 ## ⚙️ Features
 
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" alt="icon" width="20px"; vertical-align: left;">
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" alt="icon" width="30px"; vertical-align: left;">
     niri
 </p>
 
 <p>
-  <img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" alt="icon" width="20px"; vertical-align: left;">
+  <img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" alt="icon" width="30px"; vertical-align: left;">
     noctalia v5 + noctalia greeter
 </p>
 
-<div>
-<img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" align="left" width="25px" height="25px"/>
-zeditor
-</div>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" alt="icon" width="30px"; vertical-align: left;">
+    zeditor
+</p>
 
-<div>
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" align="left" width="25px" height="25px"/>
-zen browser with extenstions!
-</div>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" alt="icon" width="30px"; vertical-align: left;">
+    zen browser with extenstions!
+</p>
 
-<div>
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/discord.svg" align="left" width="25px" height="25px"/>
-discord
-</div>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/discord.svg" alt="icon" width="30px"; vertical-align: left;">
+    discord
+</p>
 
-<div>
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg" align="left" width="25px" height="25px"/>
-steam
-</div>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg" alt="icon" width="30px"; vertical-align: left;">
+    steam
+</p>
 
-<div>
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/podman.svg" align="left" width="25px" height="25px"/>
-podman
-</div>
-
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/podman.svg" alt="icon" width="30px"; vertical-align: left;">
+    podman
+</p>
 
 ### Browser Extensions
 
