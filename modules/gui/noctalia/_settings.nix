@@ -31,6 +31,11 @@ config: with config.theme; {
     };
 
     launcher.categories = false;
+
+    greeter_sync = {
+      auto_sync = true;
+      privilege_command = "kitty -e pkexec";
+    };
   };
 
   control_center = {
