@@ -19,4 +19,7 @@
   output = {
     layout = "eDP-1:0,0";
   };
+  auth = {
+  allow_empty_password = true;
+  };
 }
