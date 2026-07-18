@@ -37,3 +37,6 @@ url = "github:manic-systems/tack"
 
 [inputs.zen]
 url = "github:youwen5/zen-browser-flake"
+
+[inputs.noctalia-greeter]
+url = "github:noctalia-dev/noctalia-greeter"

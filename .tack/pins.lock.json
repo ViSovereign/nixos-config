@@ -61,6 +61,14 @@
     "narHash": "sha256-h05DrwpzaUnxSc09F8p+VVzITzcbiorB6dmGjjQLzyU=",
     "lastModified": 1784228267
   },
+  "noctalia-greeter": {
+    "type": "github",
+    "owner": "noctalia-dev",
+    "repo": "noctalia-greeter",
+    "rev": "f46e83f6992c4bade22522f911a6f005e732ce80",
+    "narHash": "sha256-bDwWO3htFoWqDu4T8d7jeGZOeBCNMeX/RyrBus1qcF4=",
+    "lastModified": 1784248874
+  },
   "sops-nix": {
     "type": "github",
     "owner": "Mic92",
