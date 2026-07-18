@@ -14,25 +14,25 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 ## ⚙️ Features
 
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" align="center" width="25px" height="25px"/>
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/niri.svg" align="left" width="25px" height="25px"/>
 niri
 
-<img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" align="center" width="25px" height="25px"/>
+<img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" align="left" width="25px" height="25px"/>
 noctalia v5 + noctalia greeter
 
-<img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" align="center" width="25px" height="25px"/>
+<img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/zed-light.svg" align="left" width="25px" height="25px"/>
 zeditor
 
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" align="center" width="25px" height="25px"/>
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" align="left" width="25px" height="25px"/>
 zen browser with extenstions!
 
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/discord.svg" align="center" width="25px" height="25px"/>
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/discord.svg" align="left" width="25px" height="25px"/>
 discord
 
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg" align="center" width="25px" height="25px"/>
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg" align="left" width="25px" height="25px"/>
 steam
 
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/podman.svg" align="center" width="25px" height="25px"/>
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/podman.svg" align="left" width="25px" height="25px"/>
 podman
 
 ### Browser Extensions
