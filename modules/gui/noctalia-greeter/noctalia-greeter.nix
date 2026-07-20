@@ -1,17 +1,13 @@
 {
   inputs,
-  config,
   ...
 }:
 {
-  packages.noctalia-greeter =
-    pkgs:
-    inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
   modules.nixos.gui.noctalia-greeter =
     { args, pkgs, lib, ... }:
     let
-      pkg = config.packages.noctalia-greeter pkgs;
+      pkg = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
       exe = lib.getExe' pkg "noctalia-greeter-apply-appearance";
       cursor = {
         theme = "Bibata-Modern-Ice";
