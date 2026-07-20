@@ -90,7 +90,7 @@ config: with config.theme; {
 
     background-color = "transparent";
 
-    default-column-width.proportion = 0.5;
+    default-column-width.proportion = 1.0;
 
     preset-column-widths = [
       { proportion = 1 / 3.0; }
