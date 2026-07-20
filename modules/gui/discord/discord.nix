@@ -25,6 +25,7 @@
           showHiddenThings.enable = true;
           fileUpload.enable = true;
           silentTyping.enable = true;
+          quoter.enable = true;
         };
       };
     };
