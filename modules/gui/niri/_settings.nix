@@ -143,7 +143,7 @@ config: with config.theme; {
     {
       matches = [ { namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"; } ];
       background-effect = {
-        blur = false;
+        blur = true;
         xray = false;
       };
     }
