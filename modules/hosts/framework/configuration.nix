@@ -10,7 +10,8 @@
           exclude = [ "impermanence" ];
         })
 
-        hardware.filesystems
+        ./_filesystems.nix
+
         hardware.usb
         hardware.thunderbolt
         hardware.disk.nvme

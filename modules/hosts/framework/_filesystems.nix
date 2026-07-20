@@ -1,6 +1,4 @@
 {
-  modules.nixos.hardware.filesystems = _: {
-
     fileSystems."/" = {
       device = "/dev/disk/by-uuid/d2670b20-7848-4f60-94b5-8e4d0b01e81f";
       fsType = "btrfs";
@@ -30,5 +28,4 @@
     swapDevices = [
       { device = "/dev/disk/by-uuid/3e6ddd4f-6506-4a96-b8e2-e856a9ed2ae7"; }
     ];
-  };
 }
