@@ -33,6 +33,8 @@ let
 
   policies = {
     DisableTelemetry = true;
+    NoDefaultBookmarks = true;
+    OfferToSaveLogins = false;
 
     ExtensionSettings = builtins.listToAttrs extensions;
 
