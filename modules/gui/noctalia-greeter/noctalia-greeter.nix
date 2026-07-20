@@ -1,26 +1,12 @@
 {
   inputs,
   config,
-  lib,
-  vars,
   ...
 }:
 {
   packages.noctalia-greeter =
     pkgs:
-    inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (
-      old: {
-        src = lib.cleanSourceWith {
-          src = old.src;
-          filter =
-            path: type:
-            let
-              base = baseNameOf path;
-            in
-            base != "build" && base != "build-release" && base != "build-asan";
-        };
-      }
-    );
+    inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
   modules.nixos.gui.noctalia-greeter =
     { args, pkgs, lib, ... }:
