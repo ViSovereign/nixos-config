@@ -94,7 +94,8 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 [Framework function keys](https://wiki.archlinux.org/title/Framework_Laptop_13#Function_keys)
 
-Most are handled by noctalia such as volume up/down, media controls, brightness, screenshots.
+> [!NOTE]
+> Most are handled by noctalia such as volume up/down, media controls, brightness, screenshots.
 
 ### Shell Aliases
 ```
@@ -109,8 +110,11 @@ Most are handled by noctalia such as volume up/down, media controls, brightness,
 
   - Secrets
   - git needs to remember my name lol
-  - function keys for keyboard brightness
+  - add my desktop to this
+  - function keys different per host
   - setup defualt open apps
+  - zen no save password
+  - get cachix working
 
  # Useful Nix Related Commands
 
@@ -119,12 +123,12 @@ Most are handled by noctalia such as volume up/down, media controls, brightness,
 ```
 sudo nixos-rebuild switch --flake .#framework --show-trace
 ```
-or
+or if you set the flake in ```/nixos-config/modules/cli/nh.nix```
 ```
 nh os switch
 ```
 
-## Update the packages in tack
+## Update Tack Package
 
 ```
 tack update <package>
