@@ -5,13 +5,13 @@
 {
 
   modules.nixos.gui.noctalia-greeter =
-    { args, pkgs, lib, ... }:
+    { theme, args, pkgs, lib, ... }:
     let
       pkg = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
       exe = lib.getExe' pkg "noctalia-greeter-apply-appearance";
       cursor = {
-        theme = "Bibata-Modern-Ice";
-        size = 24;
+        theme = "${theme.cursor.name}";
+        size = theme.cursor.size;
         path = "${pkgs.bibata-cursors}/share/icons";
       };
       greeterToml = (pkgs.formats.toml { }).generate "greeter.toml" (
