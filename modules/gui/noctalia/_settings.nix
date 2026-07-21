@@ -149,9 +149,9 @@ config: with config.theme; {
       occupied_color = "tertiary";
     };
 
-    wallpaper.default.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.jpg";
-    wallpaper.last.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.jpg";
-    wallpaper.monitors.eDP-1.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.jpg";
+    wallpaper.default.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
+    wallpaper.last.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
+    wallpaper.monitors.eDP-1.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
 
   };
 }
