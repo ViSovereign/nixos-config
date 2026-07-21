@@ -21,7 +21,6 @@
         hardware.bluetooth
         hardware.fingerprint
         hardware.power
-        hardware.truenas
 
       ];
   };
