@@ -1,6 +1,5 @@
 { args, cursor }:
 {
-  greeter_user = "greeter";
   session = {
     default = "niri";
     last = "niri";
