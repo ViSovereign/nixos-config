@@ -2,7 +2,7 @@
   modules.nixos.gui.ly = { args, ... }: {
     services.displayManager = {
       autoLogin = {
-        enable = true;
+        enable = false;
         inherit (args) user;
       };
       ly = {
