@@ -34,7 +34,6 @@ config: with config.theme; {
 
     greeter_sync = {
       auto_sync = true;
-      privilege_command = "kitty -e pkexec";
     };
   };
 
@@ -48,7 +47,7 @@ config: with config.theme; {
       { type = "audio"; }
       { type = "mic_mute"; }
       { type = "system"; }
-      { type = "screen_time"; }
+      { type = "caffeine"; }
     ];
   };
 
@@ -99,13 +98,13 @@ config: with config.theme; {
   bar = {
       default = {
         reserve_space = true;
-        hover_highlight = false;
-        background_opacity = 0.80;
+        hover_highlight = true;
+        background_opacity = 0.50;
         scale = 1.0;
         thickness = 30;
         font_weight = "bold";
         layer = "top";
-        position = "right";
+        position = "bottom";
         capsule_radius = 6;
         margin_edge = 0;
         margin_ends = 0;
@@ -113,11 +112,33 @@ config: with config.theme; {
         radius = 0;
         concave_edge_corners = true;
         radius_bottom_left = 0;
-        radius_top_left = 0;
+        radius_bottom_right = 0;
+        radius_top_left = 10;
+        radius_top_right = 10;
         widget_spacing = 10;
-        start = [ "wallhaven" "todo" "notes" ];
-        center = [ "cpu" "taskbar" "caffeine" ];
-        end = [ "network" "bluetooth" "battery" "weather" "clock" ];
+        start = [ "group:g2" "group:g1" ];
+        center = [ "cpu" "taskbar" "ram" ];
+        end = [ "audio_visualizer" "date" "clock" ];
+        capsule_group = [
+          {
+            enabled = true;
+            fill = "surface_variant";
+            id = "g1";
+            members = [ "wallhaven" "todo" "notes" ];
+            opacity = 1.0;
+            padding = 6.0;
+            radius = 6.0;
+          }
+          {
+            enabled = true;
+            fill = "surface_variant";
+            id = "g2";
+            members = [ "battery" "network" "bluetooth" ];
+            opacity = 1.0;
+            padding = 6.0;
+            radius = 6.0;
+          }
+        ];
       };
     };
 
@@ -127,6 +148,16 @@ config: with config.theme; {
       capsule_fill = "primary";
       color = "on_primary";
       format = "{:%I:%M}";
+    };
+
+    date = {
+      format = "{:%a}";
+    };
+
+    battery = {
+      color = "primary";
+      display_mode = "graphic";
+      show_label = false;
     };
 
     weather = {
