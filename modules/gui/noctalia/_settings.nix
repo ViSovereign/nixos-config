@@ -186,7 +186,7 @@ config: with config.theme; {
 
   };
 
-  plugin_settings = {
-    "noctalia/wallhaven".api_key = "$(cat ${config.sops.secrets.wallhaven_api.path})";
-  };
+  #plugin_settings = {
+  #  "noctalia/wallhaven".api_key = "$(cat ${config.sops.secrets.wallhaven-api.path})";
+  #};
 }
