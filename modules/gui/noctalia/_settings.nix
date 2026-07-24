@@ -185,4 +185,8 @@ config: with config.theme; {
     wallpaper.monitors.eDP-1.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
 
   };
+
+  plugin_settings = {
+    "noctalia/wallhaven".api_key = "$(cat ${config.sops.secrets.wallhaven_api.path})";
+  };
 }
