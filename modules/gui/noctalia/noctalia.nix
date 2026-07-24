@@ -14,7 +14,7 @@
       constructFiles = {
         settings = {
           relPath = "noctalia/config.toml";
-          content = builtins.toJSON (import ./_settings.nix config);
+          content = builtins.toJSON (import ./_settings.nix { inherit inputs config; });
           builder = "${lib.getExe pkgs.remarshal} -f json -i \"$1\" -t toml -o \"$2\"";
         };
       };
