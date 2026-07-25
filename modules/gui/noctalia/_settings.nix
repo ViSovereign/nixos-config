@@ -155,7 +155,7 @@
     };
 
     date = {
-      format = "{:%a}";
+      format = "{:%A}\n{:%B %d}";
     };
 
     battery = {
