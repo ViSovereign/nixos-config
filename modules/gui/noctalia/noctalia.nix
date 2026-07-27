@@ -19,7 +19,6 @@
         };
       };
     };
-  };
 
   modules.nixos.gui.noctalia =
     { pkgs, lib, ... }:

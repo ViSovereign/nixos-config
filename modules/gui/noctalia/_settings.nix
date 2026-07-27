@@ -122,7 +122,7 @@
         widget_spacing = 10;
         start = [ "group:g2" "group:g1" ];
         center = [ "cpu" "taskbar" "ram" ];
-        end = [ "audio_visualizer" "date" "clock" ];
+        end = [ "weather" "date" "clock" ];
         capsule_group = [
           {
             enabled = true;
@@ -155,7 +155,17 @@
     };
 
     date = {
-      format = "{:%A}\n{:%B %d}";
+      format = "{:%A}\\n{:%B %d}";
+    };
+
+    cpu = {
+      display = "graph";
+      show_label = false;
+    };
+
+    ram = {
+      display = "graph";
+      show_label = false;
     };
 
     battery = {
