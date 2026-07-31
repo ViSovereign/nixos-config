@@ -109,37 +109,32 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
  # 🏃To Dos
 
   - Secrets
-  - git needs to remember my name lol
-  - add my desktop to this
-  - function keys different per host
-  - setup defualt open apps
-  - zen no save password
-  - get cachix working
+  - disko with encryption
+  - mullvad vpn
+  - remove noctalia-greeter
+  - 
 
  # Useful Nix Related Commands
 
-  ## Switch after saving the config
+Live Disk Setup!
+```
+sudo nix \
+  --extra-experimental-features "nix-command flakes pipe-operators" \
+  run github:nix-community/disko/latest#disko-install -- \
+  --write-efi-boot-entries \
+  --flake github:ViSovereign/nixos-config/disko#framework \
+  --disk main /dev/YOUR_DISK
+```
   
-```
-sudo nixos-rebuild switch --flake .#framework --show-trace
-```
-or if you set the flake in ```/nixos-config/modules/cli/nh.nix```
+Switch to new config using ```/nixos-config/modules/cli/nh.nix```
 ```
 nh os switch
 ```
-
-## Update Tack Package
-
+Update tack packages
 ```
 tack update <package>
 ```
-or
-```
-tack update
-```
-
-## Setup the fingerprint reader
-
+Setup the fingerprint reader
 ```
 fprintd-enroll
 ```
