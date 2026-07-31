@@ -40,3 +40,6 @@ url = "github:youwen5/zen-browser-flake"
 
 [inputs.noctalia-greeter]
 url = "github:noctalia-dev/noctalia-greeter"
+
+[inputs.disko]
+url = "github:nix-community/disko"
