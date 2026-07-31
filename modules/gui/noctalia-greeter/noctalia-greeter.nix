@@ -22,7 +22,7 @@
       imports = [ inputs.noctalia-greeter.nixosModules.default ];
 
       programs.noctalia-greeter = {
-        enable = true;
+        enable = false;
         package = pkg;
         greeter-args = "";
         settings.cursor = cursor;
