@@ -112,20 +112,17 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
   - disko with encryption
   - mullvad vpn
   - remove noctalia-greeter
-  - 
-
 
 # Live Disk Setup!
 > [!NOTE]
-> Identify your target disk using `lsblk` (e.g. `/dev/nvme0n1`), then replace YOUR_DISK and run:
+> Identify your target disk using `lsblk` (e.g. `/dev/nvme0n1`), and run:
 
 ```bash
-sudo nix \
-  --extra-experimental-features "nix-command flakes pipe-operators" \
-  run github:nix-community/disko/latest#disko-install -- \
+sudo NIX_CONFIG="extra-experimental-features = nix-command flakes pipe-operators" \
+  nix run github:nix-community/disko/latest#disko-install -- \
   --write-efi-boot-entries \
   --flake github:ViSovereign/nixos-config/disko#framework \
-  --disk main /dev/YOUR_DISK
+  --disk main /dev/nvme0n1
 ```
 No errors? `reboot`
 
