@@ -18,14 +18,14 @@
       config = {
         useQuickCss = true;
 
-        plugins = {
-          messageLoggerEnhanced.enable = true;
-          voiceChannelLog.enable = true;
-          showHiddenChannels.enable = true;
-          showHiddenThings.enable = true;
-          fileUpload.enable = true;
-          silentTyping.enable = true;
-        };
+        #plugins = {
+        #  messageLoggerEnhanced.enable = true;
+        #  voiceChannelLog.enable = true;
+        #  showHiddenChannels.enable = true;
+        #  showHiddenThings.enable = true;
+        #  fileUpload.enable = true;
+        #  silentTyping.enable = true;
+        #};
       };
     };
 
