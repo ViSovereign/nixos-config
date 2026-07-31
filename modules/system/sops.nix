@@ -4,7 +4,7 @@
 
     sops = {
       defaultSopsFile = ../../secrets/secrets.yaml;
-      age.keyFile = "/var/lib/sops-nix/key.txt";
+      age.keyFile = "/etc/age/key.txt";
 
       secrets = {
         #user-password.neededForUsers = true;
