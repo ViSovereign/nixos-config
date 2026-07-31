@@ -118,6 +118,9 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 > Identify your target disk using `lsblk` (e.g. `/dev/nvme0n1`), and run:
 
 ```bash
+sudo mount -o remount,size=28G /nix/.rw-store
+sudo mount -o remount,size=28G /
+
 sudo NIX_CONFIG="extra-experimental-features = nix-command flakes pipe-operators" \
   nix run github:nix-community/disko/latest#disko-install -- \
   --write-efi-boot-entries \
