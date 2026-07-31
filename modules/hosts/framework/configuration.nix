@@ -6,11 +6,7 @@
       [
         (collect gui { exclude = [ "steam" ]; })
         (collect cli { })
-        (collect system {
-          exclude = [ "impermanence" ];
-        })
-
-        ./_filesystems.nix
+        (collect system { })
 
         hardware.usb
         hardware.thunderbolt
@@ -21,6 +17,8 @@
         hardware.bluetooth
         hardware.fingerprint
         hardware.power
+
+        ./_disko.nix
 
       ];
   };
