@@ -114,10 +114,12 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
   - remove noctalia-greeter
   - 
 
- # Useful Nix Related Commands
 
-Live Disk Setup!
-```
+# Live Disk Setup!
+> [!NOTE]
+> Identify your target disk using `lsblk` (e.g. `/dev/nvme0n1`), then replace YOUR_DISK and run:
+
+```bash
 sudo nix \
   --extra-experimental-features "nix-command flakes pipe-operators" \
   run github:nix-community/disko/latest#disko-install -- \
@@ -125,7 +127,13 @@ sudo nix \
   --flake github:ViSovereign/nixos-config/disko#framework \
   --disk main /dev/YOUR_DISK
 ```
-  
+No errors? `reboot`
+
+```bash
+git clone -b disko https://github.com/ViSovereign/nixos-config.git ~/Projects/nixos-config
+```
+
+ # Useful Nix Related Commands
 Switch to new config using ```/nixos-config/modules/cli/nh.nix```
 ```
 nh os switch
