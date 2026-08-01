@@ -124,31 +124,15 @@ sudo mount -o remount,size=28G /
 sudo NIX_CONFIG="extra-experimental-features = nix-command flakes pipe-operators" \
   nix run github:nix-community/disko/latest#disko-install -- \
   --write-efi-boot-entries \
-  --flake github:ViSovereign/nixos-config/disko#framework \
+  --flake github:ViSovereign/nixos-config/disko#frameworkboot \
   --disk main /dev/nvme0n1
 ```
-or
-```bash
-sudo mount -o remount,size=28G /nix/.rw-store
-sudo mount -o remount,size=28G /
-
-sudo NIX_CONFIG="
-extra-experimental-features = nix-command flakes pipe-operators
-extra-substituters = https://noctalia.cachix.org
-extra-trusted-public-keys = noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=
-" \
-  nix run github:nix-community/disko/latest#disko-install -- \
-  --write-efi-boot-entries \
-  --flake github:ViSovereign/nixos-config/disko#framework \
-  --disk main /dev/nvme0n1 \
-  --option extra-substituters "https://noctalia.cachix.org" \
-  --option extra-trusted-public-keys "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
-```
-
 No errors? `reboot`
 
 ```bash
 git clone -b disko https://github.com/ViSovereign/nixos-config.git ~/Projects/nixos-config
+cd ~/Projects/nixos-config
+sudo nixos-rebuild switch --flake .#framework
 ```
 
  # Useful Nix Related Commands
