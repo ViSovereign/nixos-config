@@ -13,10 +13,6 @@ url = "github:nix-community/impermanence"
 [inputs.nix-wrapper-modules]
 url = "github:birdeehub/nix-wrapper-modules"
 
-[inputs.monique]
-url = "github:torvaldz/monique"
-follows = { flake-utils = "flake-utils" }
-
 [inputs.flake-utils]
 url = "github:numtide/flake-utils"
 

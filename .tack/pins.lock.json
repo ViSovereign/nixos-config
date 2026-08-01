@@ -23,14 +23,6 @@
     "narHash": "sha256-03+JxvzmfwRu+5JafM0DLbxgHttOQZkUtDWBmeUkN8Y=",
     "lastModified": 1769548169
   },
-  "monique": {
-    "type": "github",
-    "owner": "torvaldz",
-    "repo": "monique",
-    "rev": "257bc5b9fdbd41d056fda44cf35de32660e9cef9",
-    "narHash": "sha256-Z15bA0ImPPYC+RdVmHsYYEOM8jlGXpw8REzJqp80wfU=",
-    "lastModified": 1783941473
-  },
   "nix-index-database": {
     "type": "github",
     "owner": "nix-community",
