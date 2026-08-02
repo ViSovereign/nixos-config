@@ -46,6 +46,10 @@
         };
       };
 
+      system.activationScripts.noctalia = ''
+        noctalia msg wallpaper-set eDP-1 /home/b/Projects/nixos-config/modules/static/wallpaper.PNG
+      '';
+
       custom.keybinds = {
 
         "XF86AudioRaiseVolume".spawn = [
