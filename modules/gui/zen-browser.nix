@@ -94,6 +94,11 @@ in
     {
       environment.systemPackages = [ pkg ];
 
+      custom.persist.user.directories = [
+        ".config/zen"
+        ".cache/zen"
+      ];
+
       custom.keybinds."Mod+B".spawn = [ (lib.getExe pkg) ];
     };
 }

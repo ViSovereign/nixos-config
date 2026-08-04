@@ -46,9 +46,10 @@
         };
       };
 
-      system.activationScripts.noctalia = ''
-        noctalia msg wallpaper-set eDP-1 /home/b/Projects/nixos-config/modules/static/wallpaper.PNG
-      '';
+      custom.persist.user.directories = [
+        ".local/state/noctalia"
+        ".cache/noctalia"
+      ];
 
       custom.keybinds = {
 
