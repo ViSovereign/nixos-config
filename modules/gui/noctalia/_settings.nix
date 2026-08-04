@@ -16,7 +16,7 @@
     telemetry_enabled = true;
     settings_show_advanced = true;
     setup_wizard_enabled = false;
-
+    weather.unit = "imperial";
     screenshot.directory = "/home/b/Pictures/screenshots";
 
     panel = {
