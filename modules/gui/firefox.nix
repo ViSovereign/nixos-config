@@ -2,7 +2,7 @@
   modules.nixos.gui.firefox = { pkgs, ... }: {
 
     programs.firefox = {
-      enable = false;
+      enable = true;
       preferences = {
         "browser.startup.homepage"      = "https://homepage.amandis.live";
         "privacy.resistFingerprinting"  = true;
