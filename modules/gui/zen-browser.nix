@@ -39,9 +39,15 @@ let
     ExtensionSettings = builtins.listToAttrs extensions;
 
     SearchEngines = {
-      Default = "ddg";
+      Default = "ki";
 
       Add = [
+        {
+          Name = "kagi search";
+          URLTemplate = "https://kagi.com/search?q={searchTerms}";
+          IconURL = "https://kagi.com/favicon.ico";
+          Alias = "@ki";
+        }
         {
           Name = "nixpkgs packages";
           URLTemplate = "https://search.nixos.org/packages?query={searchTerms}";
