@@ -13,10 +13,6 @@ url = "github:nix-community/impermanence"
 [inputs.nix-wrapper-modules]
 url = "github:birdeehub/nix-wrapper-modules"
 
-[inputs.monique]
-url = "github:torvaldz/monique"
-follows = { flake-utils = "flake-utils" }
-
 [inputs.flake-utils]
 url = "github:numtide/flake-utils"
 
@@ -36,11 +32,11 @@ exclude_follow = [ "nixpkgs" ]
 [inputs.tack]
 url = "github:manic-systems/tack"
 
-[inputs.zen]
-url = "github:youwen5/zen-browser-flake"
-
 [inputs.noctalia-greeter]
 url = "github:noctalia-dev/noctalia-greeter"
 
 [inputs.disko]
 url = "github:nix-community/disko"
+
+[inputs.zen]
+url = "github:youwen5/zen-browser-flake"

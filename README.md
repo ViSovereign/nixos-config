@@ -109,37 +109,53 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
  # 🏃To Dos
 
   - Secrets
-  - git needs to remember my name lol
-  - add my desktop to this
-  - function keys different per host
-  - setup defualt open apps
-  - zen no save password
-  - get cachix working
+  - disko with encryption
+  - mullvad vpn
+  - remove noctalia-greeter
+
+# Live Disk Setup!
+
+It is easiest to setup SSH on then use a second machine to monitor!
+```bash
+sudo systemctl start sshd
+sudo passwd nixos
+```
+Connect on the second machine!
+```
+ssh nixos@<IP-ADDRESS>
+```
+
+> [!NOTE]
+> Identify your target disk using `lsblk` (e.g. `/dev/nvme0n1`), and run:
+
+```bash
+sudo mount -o remount,size=28G /nix/.rw-store
+sudo mount -o remount,size=28G /
+
+sudo NIX_CONFIG="extra-experimental-features = nix-command flakes pipe-operators" \
+  nix run github:nix-community/disko/latest#disko-install -- \
+  --write-efi-boot-entries \
+  --flake github:ViSovereign/nixos-config/disko#frameworkboot \
+  --disk main /dev/nvme0n1
+```
+No errors? `reboot` and log in! Connect to wifi with `nmtui`
+
+```bash
+git clone -b disko https://github.com/ViSovereign/nixos-config.git ~/Projects/nixos-config
+cd ~/Projects/nixos-config
+sudo nixos-rebuild switch --flake .#framework
+```
 
  # Useful Nix Related Commands
-
-  ## Switch after saving the config
-  
-```
-sudo nixos-rebuild switch --flake .#framework --show-trace
-```
-or if you set the flake in ```/nixos-config/modules/cli/nh.nix```
+Switch to new config using ```/nixos-config/modules/cli/nh.nix```
 ```
 nh os switch
 ```
-
-## Update Tack Package
-
+Update tack packages
 ```
 tack update <package>
 ```
-or
-```
-tack update
-```
-
-## Setup the fingerprint reader
-
+Setup the fingerprint reader
 ```
 fprintd-enroll
 ```

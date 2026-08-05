@@ -46,6 +46,11 @@
         };
       };
 
+      custom.persist.user.directories = [
+        ".local/state/noctalia"
+        ".cache/noctalia"
+      ];
+
       custom.keybinds = {
 
         "XF86AudioRaiseVolume".spawn = [

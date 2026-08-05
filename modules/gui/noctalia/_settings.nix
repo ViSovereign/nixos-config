@@ -16,7 +16,7 @@
     telemetry_enabled = true;
     settings_show_advanced = true;
     setup_wizard_enabled = false;
-
+    weather.unit = "imperial";
     screenshot.directory = "/home/b/Pictures/screenshots";
 
     panel = {
@@ -26,11 +26,6 @@
       control_center_placement = "floating";
       session_placement = "floating";
       session_position = "center";
-      window-rule = {
-        open-fullscreen = false;
-        geometry-corner-radius = 10;
-        clip-to-geometry = true;
-      };
       transparency_mode = "soft";
     };
 
@@ -59,7 +54,7 @@
     behavior_order = [
       "lock"
       "screen-off"
-      "lock-and-suspend"
+      "lock_and_suspend"
     ];
 
     behavior = {
@@ -120,7 +115,7 @@
         radius_top_left = 10;
         radius_top_right = 10;
         widget_spacing = 10;
-        start = [ "group:g2" "group:g1" ];
+        start = [ "battery" "group:g2" "group:g1" ];
         center = [ "cpu" "taskbar" "ram" ];
         end = [ "weather" "date" "clock" ];
         capsule_group = [
@@ -137,7 +132,7 @@
             enabled = true;
             fill = "surface_variant";
             id = "g2";
-            members = [ "battery" "network" "bluetooth" ];
+            members = [ "network" "bluetooth" ];
             opacity = 1.0;
             padding = 6.0;
             radius = 6.0;
@@ -159,24 +154,31 @@
     };
 
     cpu = {
-      display = "graph";
-      show_label = false;
+      show_value = false;
+      stat = "cpu_usage";
+      type = "sysmon";
+      visualization = "graph";
     };
 
     ram = {
-      display = "graph";
-      show_label = false;
+      show_value = false;
+      stat = "ram_used";
+      type = "sysmon";
+      visualization = "graph";
     };
 
     battery = {
       color = "primary";
       display_mode = "graphic";
+      scale = 1.4;
       show_label = false;
+      type = "battery";
     };
 
     weather = {
-      show_temperature = false;
-      unit = "imperial";
+      show_condition = false;
+      show_temperature = true;
+      type = "weather";
     };
 
     tray.drawer = true;
@@ -193,10 +195,6 @@
       empty_color = "tertiary";
       occupied_color = "tertiary";
     };
-
-    wallpaper.default.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
-    wallpaper.last.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
-    wallpaper.monitors.eDP-1.path = "/home/b/Projects/nixos-config/modules/static/wallpaper.PNG";
 
   };
 

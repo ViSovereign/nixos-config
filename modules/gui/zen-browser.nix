@@ -54,18 +54,6 @@ let
           IconURL = "https://wiki.nixos.org/favicon.ico";
           Alias = "@no";
         }
-        {
-          Name = "NixOS Wiki";
-          URLTemplate = "https://wiki.nixos.org/w/index.php?search={searchTerms}";
-          IconURL = "https://wiki.nixos.org/favicon.ico";
-          Alias = "@nw";
-        }
-        {
-          Name = "noogle";
-          URLTemplate = "https://noogle.dev/q?term={searchTerms}";
-          IconURL = "https://noogle.dev/favicon.ico";
-          Alias = "@ng";
-        }
       ];
     };
   };
@@ -93,6 +81,11 @@ in
     in
     {
       environment.systemPackages = [ pkg ];
+
+      custom.persist.user.directories = [
+        ".config/zen"
+        ".cache/zen"
+      ];
 
       custom.keybinds."Mod+B".spawn = [ (lib.getExe pkg) ];
     };

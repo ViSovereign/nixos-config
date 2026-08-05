@@ -23,14 +23,6 @@
     "narHash": "sha256-03+JxvzmfwRu+5JafM0DLbxgHttOQZkUtDWBmeUkN8Y=",
     "lastModified": 1769548169
   },
-  "monique": {
-    "type": "github",
-    "owner": "torvaldz",
-    "repo": "monique",
-    "rev": "257bc5b9fdbd41d056fda44cf35de32660e9cef9",
-    "narHash": "sha256-Z15bA0ImPPYC+RdVmHsYYEOM8jlGXpw8REzJqp80wfU=",
-    "lastModified": 1783941473
-  },
   "nix-index-database": {
     "type": "github",
     "owner": "nix-community",
@@ -105,8 +97,8 @@
     "type": "github",
     "owner": "youwen5",
     "repo": "zen-browser-flake",
-    "rev": "8eacc2dd2a94e4d44af26c31cc8d5728ccd6592f",
-    "narHash": "sha256-6wTeaUyWC/e4V5Kjd7aMy/07jTTBW7r8uZvYQCmR4eA=",
-    "lastModified": 1784182496
+    "rev": "b7d4cc2778143a228675cd8bb7efdfa111638ac8",
+    "narHash": "sha256-wWRW/Teo+58EMeTpVVEAqYid1qLzpB/PViQJCv7Xxvc=",
+    "lastModified": 1785480078
   }
 }

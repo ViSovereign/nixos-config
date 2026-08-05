@@ -1,10 +1,9 @@
 { config, ... }: {
-  nixosConfigurations = config.lib.mkNixos "framework" {
+  nixosConfigurations = config.lib.mkNixos "frameworkboot" {
     modules =
       with config.modules.nixos;
       with config.lib;
       [
-        (collect gui { exclude = [ "steam" ]; })
         (collect cli { })
         (collect system { })
 
@@ -18,7 +17,7 @@
         hardware.fingerprint
         hardware.power
 
-        ./_disko.nix
+        ../framework/_disko.nix
 
       ];
   };

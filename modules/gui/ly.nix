@@ -2,11 +2,11 @@
   modules.nixos.gui.ly = { args, ... }: {
     services.displayManager = {
       autoLogin = {
-        enable = false;
+        enable = true;
         inherit (args) user;
       };
       ly = {
-        enable = false;
+        enable = true;
         x11Support = false;
       };
     };
