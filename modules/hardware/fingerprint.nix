@@ -5,7 +5,7 @@
     security.pam.services = {
       sudo.fprintAuth = true; # Enable fingerprint for sudo
       su.fprintAuth = true; # Enable fingerprint for su
-      login.fprintAuth = false; # Keep for login
+      login.fprintAuth = true; # Keep for login
     };
   };
 }
