@@ -1,6 +1,7 @@
 { inputs, ... }: {
-  modules.nixos.system.sops = { args, ... }: {
-    imports = [ inputs.sops-nix.nixosModules.sops ];
+  modules.nixos.system.sops =
+  { args, ... }: {
+    imports = [ inputs.sops-nix.nixosModules.default ];
 
     sops = {
       defaultSopsFile = ../../secrets/secrets.yaml;

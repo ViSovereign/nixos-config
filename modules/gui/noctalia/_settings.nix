@@ -1,12 +1,8 @@
-{
-  config,
-  ...
-}:
-{
+{ fonts }: {
   shell = {
     button_borders = false;
     corner_radius_scale = 0.70000001043081284;
-    font_family = config.theme.fonts.sans;
+    font_family = fonts.sans;
 
     launch_apps_as_systemd_services = true;
     niri_overview_type_to_launch_enabled = true;

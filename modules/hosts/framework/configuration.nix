@@ -1,8 +1,9 @@
-{ config, ... }: {
-  nixosConfigurations = config.lib.mkNixos "framework" {
+{ self, ... }:
+{
+  nixosConfigurations = self.lib.mkNixos "framework" {
     modules =
-      with config.modules.nixos;
-      with config.lib;
+      with self.modules.nixos;
+      with self.lib;
       [
         (collect gui { exclude = [ "steam" ]; })
         (collect cli { })

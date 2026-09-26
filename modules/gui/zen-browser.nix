@@ -1,9 +1,4 @@
-{
-  inputs,
-  config,
-  lib,
-  ...
-}:
+{ self, lib, inputs, ... }:
 let
   extension = shortId: guid: {
     name = guid;
@@ -83,7 +78,7 @@ in
   modules.nixos.gui.zen =
     { pkgs, ... }:
     let
-      pkg = config.packages.zen pkgs;
+      pkg = self.packages.zen pkgs;
     in
     {
       environment.systemPackages = [ pkg ];

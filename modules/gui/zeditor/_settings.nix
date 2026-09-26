@@ -1,4 +1,4 @@
-config: with config.theme; {
+{ fonts }: {
   ui_font_family = fonts.sans;
   ui_font_size = fonts.size * 4.0 / 3.0;
   buffer_font_family = fonts.mono;
@@ -34,7 +34,7 @@ config: with config.theme; {
     min_line_number_digits = 0;
     runnables = false;
   };
-  helix_mode = false;
+  helix_mode = true;
   icon_theme = {
     dark = "Colored Zed Icons Theme Dark";
     light = "Colored Zed Icons Theme Light";

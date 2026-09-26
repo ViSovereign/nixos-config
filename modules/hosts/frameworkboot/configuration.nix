@@ -1,7 +1,7 @@
-{ config, ... }: {
-  nixosConfigurations = config.lib.mkNixos "frameworkboot" {
+{ self, ... }: {
+  nixosConfigurations = self.lib.mkNixos "frameworkboot" {
     modules =
-      with config.modules.nixos;
+      with self.modules.nixos;
       with config.lib;
       [
         (collect cli { })
