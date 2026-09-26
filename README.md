@@ -108,10 +108,11 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
  
  # 🏃To Dos
 
-  - Secrets
-  - disko with encryption
-  - mullvad vpn
-  - remove noctalia-greeter
+  - Secrets (follow holy config)
+  - set xgd-open defaults
+  - swap niri for umbriel
+  - Replace live disk setup for nixos-anywhere
+  - swap zen for helium, keep firefox as backup
 
 # Live Disk Setup!
 
@@ -151,9 +152,9 @@ Switch to new config using ```/nixos-config/modules/cli/nh.nix```
 ```
 nh os switch
 ```
-Update tack packages
+Update packages
 ```
-tack update <package>
+flake update <package>
 ```
 Setup the fingerprint reader
 ```
