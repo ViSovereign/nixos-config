@@ -15,6 +15,6 @@
     {
       environment.systemPackages = [ pkg ];
 
-      custom.keybinds."Mod+Return".spawn = lib.getExe pkg;
+      custom.keybinds."Mod+X".spawn = lib.getExe pkg;
     };
 }
