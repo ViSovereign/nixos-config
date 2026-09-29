@@ -36,6 +36,26 @@
         "type": "github"
       }
     },
+    "helium-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790255647,
+        "narHash": "sha256-VGsihdN8HxpBeNHB2AK/G5PJP2fFMLBCTy0c1ti0fIg=",
+        "owner": "oxcl",
+        "repo": "nix-flake-helium-browser",
+        "rev": "5334f268b6cec49c58f69093b8f3198d3516e566",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxcl",
+        "repo": "nix-flake-helium-browser",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -231,11 +251,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1790323409,
-        "narHash": "sha256-m4DGo58Fza5ImOegtWOeE18nhpSO1IGzsVA6Lpsb4zw=",
-        "rev": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
+        "lastModified": 1790578696,
+        "narHash": "sha256-EvoKOTtoIJ7Xflls2Nfo5WDcqjFJB0kuzwOz0nLWs0w=",
+        "rev": "7a0f122f5090cf4c2ade2a13a0e229d4e19ba71f",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1079315.e94cb152ed51/nixexprs.tar.zst"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1080855.7a0f122f5090/nixexprs.tar.zst"
       },
       "original": {
         "type": "tarball",
@@ -277,6 +297,7 @@
     "root": {
       "inputs": {
         "disko": "disko",
+        "helium-browser": "helium-browser",
         "impermanence": "impermanence",
         "monique": "monique",
         "nix-index-database": "nix-index-database",
