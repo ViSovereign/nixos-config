@@ -48,7 +48,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    helium-browser = {
+    helium = {
       url = "github:oxcl/nix-flake-helium-browser";
       inputs.nixpkgs.follows = "nixpkgs";
     };
