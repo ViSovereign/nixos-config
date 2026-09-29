@@ -121,6 +121,11 @@
           "panel-toggle"
           "launcher"
         ];
+        "Mod+W".spawn = [
+          exe
+          "msg"
+          "window-switcher"
+        ];
         "Mod+Comma".spawn = [
           exe
           "msg"
