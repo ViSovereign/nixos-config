@@ -1,16 +1,12 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/150279bb788cf84fc94a8b79cfcd47857cac50e2/svg/nixos.svg" align="center" width="144px" height="144px"/>
+<img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/150279bb788cf84fc94a8b79cfcd47857cac50e2/svg/nixos.svg" align="center" width="125px" height="125px"/>
 
-# Sov's Nix Configuration
+# Sovereign's nixos-config
 
-_My NixOS setup for Framework 13 (AMD Ryzen 7040) and eventually other equipment as I go_
+_My NixOS setup for Framework 13 (AMD Ryzen 7040)_
 
 </div>
-
-## 💻 Framework 13
-
-This repository contains a NixOS configuration tailored for the Framework 13 (AMD Ryzen 7040).
 
 ## ⚙️ Features
 
@@ -21,7 +17,7 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 <p>
   <img src="https://docs.noctalia.dev/_astro/noctalia-logo.BwXc-yKG.svg" alt="icon" width="30px"; vertical-align: left;">
-    noctalia v5 + noctalia greeter
+    noctalia v5
 </p>
 
 <p>
@@ -30,8 +26,8 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 </p>
 
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zen-browser-dark.svg" alt="icon" width="30px"; vertical-align: left;">
-    zen browser with extenstions!
+  <img src="https://cdn.simpleicons.org/heliumbrowser/3450D1" alt="icon" width="30px"; vertical-align: left;">
+    Helium
 </p>
 
 <p>
@@ -51,7 +47,7 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
 
 ### Browser Extensions
 
-- Darkreader
+- PIPx (Pop out video)
 - Kagi search
 - Bitwarden
 - uBlock Origin
@@ -112,7 +108,6 @@ This repository contains a NixOS configuration tailored for the Framework 13 (AM
   - set xgd-open defaults
   - swap niri for umbriel
   - Replace live disk setup for nixos-anywhere
-  - swap zen for helium, keep firefox as backup
 
 # Live Disk Setup!
 
