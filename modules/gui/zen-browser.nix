@@ -88,6 +88,6 @@ in
         ".cache/zen"
       ];
 
-      custom.keybinds."Mod+B".spawn = [ (lib.getExe pkg) ];
+      custom.keybinds."Mod+Alt+B".spawn = [ (lib.getExe pkg) ];
     };
 }
