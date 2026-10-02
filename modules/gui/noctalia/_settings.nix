@@ -90,6 +90,10 @@
     pure_black_dark = true;
   };
 
+  wallpaper = {
+    directory = "/home/b/Pictures/Wallpapers";
+  };
+
   bar = {
       default = {
         reserve_space = true;
