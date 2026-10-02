@@ -82,9 +82,9 @@ _My NixOS setup for Framework 13 (AMD Ryzen 7040)_
 |---|---|
 | Mod+X | open kitty |
 | Mod+E | open nautilus |
-| Mod+Shift+E | open zeditor |
+| Mod+Z | open zeditor |
 | Mod+Shift+D | open discord |
-| Mod+B | open zen browser |
+| Mod+B | open helium |
 
 ### Function Keys
 
@@ -149,7 +149,7 @@ nh os switch
 ```
 Update packages
 ```
-flake update <package>
+nix flake update <package>
 ```
 Setup the fingerprint reader
 ```
