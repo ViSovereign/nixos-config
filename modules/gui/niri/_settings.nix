@@ -133,11 +133,41 @@
     workspace-shadow.off = _: { };
   };
 
-  window-rule = {
-    open-fullscreen = false;
-    geometry-corner-radius = 10;
-    clip-to-geometry = true;
-  };
+  window-rules = [
+    {
+      matches = [
+        {
+          at-startup = true;
+          app-id = "vesktop";
+        }
+      ];
+      open-on-output = "DP-2";
+      open-on-workspace = "vesktop";
+      open-maximized = true;
+    }
+    {
+      matches = [ { app-id = "helium"; } ];
+      open-on-workspace = "browser";
+      open-maximized = true;
+    }
+    {
+      matches = [
+        {
+          title = "^(Picture-in-Picture|Picture in picture)$";
+        }
+      ];
+      open-floating = true;
+      default-column-width = [ { fixed = 480; } ];
+      default-window-height = [ { fixed = 270; } ];
+      #default-floating-position = [ { x = 10; y = 20; relative-to = "bottom-right"; } ];
+    }
+    {
+      matches = [ { } ];
+      geometry-corner-radius = 10;
+      clip-to-geometry = true;
+      open-fullscreen = false;
+    }
+  ];
 
   layer-rules = [
     {
