@@ -39,7 +39,7 @@
     {
       environment.systemPackages = [ pkg ];
 
-      custom.keybinds."Mod+Shift+E".spawn = lib.getExe pkg;
+      custom.keybinds."Mod+Z".spawn = lib.getExe pkg;
 
       custom.persist.user.directories = [
         ".cache/zed"
